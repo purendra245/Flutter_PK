@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="css/c27-genesys.min.css"/>
+		<link type="text/css" rel="stylesheet" href="css/c27-genesys-prelogin.min.css"/>
+		<link type="text/css" rel="stylesheet" href="css/ball-prelogin.min.css"/>
+		<link type="text/css" rel="stylesheet" href="css/chat/Widget.css"/>
+		<link type="text/css" rel="stylesheet" href="css/chat/widgets.min.css"/>
+		
+		<script type="text/javascript" src="js/chat/require.js" data-main="js/chat.js"></script>
+		<script type="text/javascript" src="js/jquery-3.6.0.min.js" />
+		
+		<script type="text/javascript">
+			var webchatUrl = 'https://www.watsonut.com.my/genesys/2/chat/request-chat';
+			var callbackUrl = 'https://www.watsonut.com.my/genesys/1/service/callback/myPreview';
+			var webchatSurveyUrl = 'https://survey.hlb.com.my/EFM/se/682C0D247C9AE1CF';
+			var webchatSurveyUrlAgent = 'https://survey.hlb.com.my/EFM/se/682C0D24033B15EE';
+			var i18nUrl = 'localCxWidget.json';
+			var pChatSessId = 'uuid';
+			var userDataString = '{chatSessionID: "' + pChatSessId + '", isLoginInFlag: "false", SourceChat: "MOB"}';
+			var pSourceChat = 'MOB';
+			var userDisplayName = 'Jackie Hung';
+			var userMobileNumber = '+60127776666';
+			$(document).ready(function () {
+				require([ 'chat/boot' ]);
+			});
+		</script>		
+	</head>
+	<body>
+		<button type="button" class="chat-initiator" onclick="javascript: startChat('Anonymous');" id="idChatContainer">
+			Chat with Us
+		</button>
+	</body>
+</html>

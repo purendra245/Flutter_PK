@@ -1,0 +1,75 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.0.1"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    buildToolsVersion = "29.0.2"
+    compileSdkVersion = 29
+    minSdkVersion = 24
+    targetSdkVersion = 29
+    rxAndroidVersion = "2.0.2"
+    eventBusVersion = "3.1.1"
+    glideVersion = "4.10.0"
+    googlePlayServiceVerion = "17.0.0"
+    espressoVersion = "3.1.1"
+    tedPermissionVersion = "2.2.3"
+    constaintLayoutVersion = "2.0.0-beta6"
+    butterknifeVersion = "9.0.0-rc1"
+    androidNetworkingVersion = "1.0.2"
+    kprogresshudVersion = "1.2.0"
+    firebaseMessagingVersion = "20.2.0"
+    testrunnerVersion = "1.0.2"
+    libphonenumberVersion = "8.8.5"
+    dialogBuilderVersion = "1.0.0"
+    adobeMobileLibraryVersion = "4.13.7"
+    stickyListHeadersVersion = "2.7.1"
+    ahbottomnavigation = "2.1.0"
+    pinentryedittextVersion = "1.3.1"
+    expandablerecyclerviewVersion = "1.0"
+    aviLibraryVersion = "2.1.3"
+    toggleVersion = "1.0.0"
+    multidexVersion = "2.0.1"
+    fastScrollRecyclerViewVersion = "1.0.92"
+    rxjavaVersion = "1.1.2"
+    rxandroidVersion = "1.1.0"
+    rxbindingVersion = "0.4.0"
+    ioCardVersion = "5.5.1"
+    materialSpinnerVersion = "1.2.5"
+    versionMajor = 1
+    versionMinor = 0
+    versionRegression = 8
+    shortcutBadgerVersion = "1.1.22@aar"
+    lifeCycleVersion = "1.1.1"
+    daggerVersion = "2.13"
+    pagingVersion = "1.0.1"
+    crashlyticVersion = "17.1.0"
+    analyticVersion = "17.4.3"
+    perfVersion = "19.0.7"
+    workManagerVersion = "2.3.4"
+    nav_version = "2.3.2"
+    lifecycle_version = "2.2.0"
+    coroutinesVersion = "1.4.2"
+    hiltVersion = "2.28-alpha"
+    hilt_jetpack_version = "1.0.0-alpha01"
+}
